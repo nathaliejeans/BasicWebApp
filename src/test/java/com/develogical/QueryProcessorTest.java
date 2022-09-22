@@ -35,9 +35,10 @@ public class QueryProcessorTest {
         assertThat(queryProcessor.process("nathalie"), containsString("Jeans"));
     }
 
-    // @Test
-    // public void isMe() throws Exception {
-    //     assertThat(queryProcessor.process("name"), containsString("JKN"));
-    // }
+    @Test
+    public void addition() throws Exception {
+        assertThat(queryProcessor.process("What is 2012 plus 2014"), 
+        containsString("4026"));
+    }
 
 }
