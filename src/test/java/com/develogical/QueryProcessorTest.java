@@ -41,4 +41,16 @@ public class QueryProcessorTest {
         containsString("4026"));
     }
 
+    @Test
+    public void mult1() throws Exception {
+        assertThat(queryProcessor.process("What is 2018 multiplied by 209"), 
+        containsString("421762"));
+    }
+
+    @Test
+    public void mult2() throws Exception {
+        assertThat(queryProcessor.process("What is 201 multiplied by 204"), 
+        containsString("41004"));
+    }
+
 }
